@@ -16,7 +16,9 @@ contract Hack {
     }
 }
 
-   
+
+// given contract 
+
 contract Telephone {
 
   address public owner;
