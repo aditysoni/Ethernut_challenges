@@ -1,9 +1,9 @@
-#Fallback_Challenge 
+# Fallback_Challenge 
 solution [how to think]
 1.First find where the owner variable is set 2 . to set the owner = msg.sender ; we have to call the contribute function 3 . after calling and sending some value greater than 0 we will have to call receive function
 2. And , for that we have to do low level transaction , after successful execution of the transaction 5 .we will be the owner and then we will call the withdraw function and will withdraw all the ether
 
-#Fallout_challenge 
+# Fallout_challenge 
 Second ethernut challenge in which you have to change the owner to yourself .
 In solidity 0.6 we have to declare constructor by
 function _name_of_the_contract () {}
@@ -17,7 +17,7 @@ We have to change the owner of the TELEPHONE contract .
 we will deploy HACK contract , in which we will call the change_owner function .
 msg.sender and tx.origin are different , and so the owner will change to us.
 
-#token_challenge
+# Token_challenge
 Fifth ethernut challenge. In this challenge we have to increase the amount of the tokens in the ethernut contract address.
 Prcedure ----
 We deploy a contract by using our wallet and simply transfer the token to the challenge contract by calling the transfer function . Hence increasing the token amount from 20 ethers to 21 ethers , which we can see by calling balance function .
